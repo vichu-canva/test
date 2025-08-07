@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Test</title>
+    <script>
+        function validateForm(event) {
+            event.preventDefault(); // Prevents actual form submission
+            
+            let firstName = document.getElementById("first_name").value.trim();
+            let lastName = document.getElementById("last_name").value.trim();
+            let dob = document.getElementById("dob").value;
+
+            if firstName === "" , lastName === "" , dob === "" 
+                alert("Please fill out all fields before submitting.");
+                return;
+            }
+
+            // Display a confirmation message
+            alert(`Form submitted successfully!\nName: ${firstName} ${lastName}\nDOB: ${dob}`);
+
+            // Optional: Clear form after submission
+            document.getElementById("userForm").reset();
+           
+    </script>
+</head>
+<body>
+
+    <form id="userForm">
+        <label for="first_name">ENTER YOUR FIRST NAME:</label>
+        <input type="text" id="first_name" name="first_name" placeholder="e.g., Sam" required>
+        <br><br>
+
+        <label for="last_name">ENTER YOUR LAST NAME:</label>
+        <input type="text" id="last_name" name="last_name" placeholder="e.g., John" required>
+        <br><br>
+
+        <label for="dob">ENTER YOUR DOB:</label>
+        <input type="date" id="dob" name="dob" required>
+        <br><br>
+
+        <button type="reset">RESET</button>
+        <button type="submit" onclick="validateForm(event)">SUBMIT</button>
+    </form>
+
+</body>
+</html>
