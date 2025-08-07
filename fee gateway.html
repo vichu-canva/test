@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEE PAYMENT GATEWAY</title>
+    <style>
+        body {
+            background-image: url("https://assets2.ignimgs.com/2014/06/18/minecraft-buttonjpg-b689ca.jpg");
+            background-size: cover;  
+            color: blue;
+            background-color: greenyellow;
+            text-align: center;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: lime;
+        }
+
+        input, select {
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 250px;
+            color: #000;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 8px 15px;
+            background-color: navy;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            width: 500px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header {
+            color: rebeccapurple;
+            font-size: larger;
+            text-align: center;
+            background-color: black;
+            padding: 10px;
+            opacity: 0.8;
+        }
+
+        .btn {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <p><strong>TO FEE GATEWAY FOR PAYING SCHOOL FEE.</strong></p>
+    </header>
+
+    <nav>
+        <a href="http://127.0.0.1:5500/html.html?#home" target="_self" title="YOU WILL STAY AT SAME PAGE">Home</a>
+        <a href="https://chatgpt.com/c/67fa8b7a-8dd4-8012-a5f1-b6273ffbefac" target="_blank" title="YOU WILL BE MOVED TO CHATGPT.COM">Services</a>
+        <a href="https://web.whatsapp.com/" target="_blank" title="YOU WILL BE MOVED TO WhatsApp Web">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h3>MAHARISHI VIDYA MANDIR</h3>
+
+        <form id="userForm" action="1.html" method="get">
+            <label for="FIRSTNAME">ENTER YOUR FIRST NAME:</label>
+            <input type="text" id="FIRSTNAME" name="firstname" placeholder="eg: vinoth" required>
+
+            <label for="LASTNAME">ENTER YOUR LAST NAME:</label>
+            <input type="text" id="LASTNAME" name="lastname" placeholder="eg: singh" required>
+
+            <label for="dob">ENTER YOUR DOB:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">ENTER YOUR E-MAIL ADDRESS:</label>
+            <input type="email" id="email" name="email" placeholder="eg: chetan@gmail.com" required>
+
+            <label for="phone">ENTER YOUR PHONE NUMBER:</label>
+            <input type="tel" id="phone" name="phone" placeholder="eg: +1234567890" required>
+
+            <label for="text,number">ENTER YOUR ADMISSION NO.:</label>
+            <input type="text,number" id="number" name="ADMISSION NO." placeholder="eg: C1234" required>
+
+            <label for="stream">ENTER YOUR STREAM:</label>
+            <select id="stream" name="stream" required>
+                <option value="" disabled selected>Select your stream</option>
+                <option value="Science">Science</option>
+                <option value="Commerce">Commerce</option>
+                <option value="computer Science">computer Science</option>
+            </select>
+
+            <br>
+
+            <button type="reset">RESET</button>
+            <button type="submit" class="btn">SUBMIT</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 MAHARISHI VIDYA MANDIR. All Rights Reserved.</p>
+        <p>Contact us at <a href="mailto:contact@gmail.com" target="_blank">contact@mvm.edu</a></p>
+    </footer>
+
+</body>
+</html>
